@@ -1,0 +1,9 @@
+@media (max-width: 704px) {
+    .footer-container {
+        grid-template-areas:
+            'profile'
+            'links';
+            gap: 20px;
+            justify-content: center;
+    }
+}

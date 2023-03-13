@@ -1,0 +1,76 @@
+.grid-contact-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    border: 1px solid #1a1b1f;
+    box-shadow: 2px 2px 0px #000;
+    border-radius: 15px;
+    padding: 60px 40px;
+}
+
+.contact-content.left>h4 {
+    font-size: 60px;
+    line-height: 80px;
+    font-weight: 500;
+}
+
+.grid-contact-form {
+    display: grid;
+    grid-template-areas:
+        'name email'
+        'message message';
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.contact-input.name {
+    grid-area: name;
+}
+
+.contact-input.email {
+    grid-area: email;
+}
+
+.contact-input.message {
+    grid-area: message;
+}
+
+.contact-input label {
+    font-size: 13px;
+    font-weight: 600;
+    opacity: 0.4;
+}
+
+.contact-input input,
+.contact-input textarea {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-family: inherit;
+    font-weight: 300;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.contact-input textarea {
+    width: 100%;
+    height: 175px;
+    resize: none;
+}
+
+.contact-input input:focus,
+.contact-input textarea:focus {
+    outline: none;
+}
+
+.input-error {
+    display: block;
+    padding: 5px;
+    color: #b02a37;
+    background-color: #f8d7da;
+    border: 1px solid #f1aeb5;
+    border-radius: 5px;
+    font-size: 12px;
+    margin-top: 5px;
+}

@@ -1,0 +1,35 @@
+#presentation>.section-content h1 {
+    font-size: 64px;
+}
+
+#presentation>.section-content h3 {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.background-container {
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    z-index: -1;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.dinamic-background {
+    width: 1000px;
+    height: 1000px;
+    margin: 0 auto;
+    top: 0;
+    animation: spinbg 10s linear infinite;
+}
+
+@keyframes spinbg {
+    0% {
+        transform: rotateZ(0deg);
+    }
+
+    100% {
+        transform: rotateZ(360deg);
+    }
+}

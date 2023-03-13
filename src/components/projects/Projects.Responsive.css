@@ -1,0 +1,7 @@
+@media (max-width: 991px) {
+    .grid-projects-container {
+        display: grid;
+        grid-template-columns: 100%;
+        gap: 0;
+    }
+}

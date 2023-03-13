@@ -1,0 +1,13 @@
+@media (max-width: 767px) {
+    #presentation>.section-content .me-photo {
+        margin: 0 auto;
+    }
+
+    #presentation>.section-content h1 {
+        font-size: 54px;
+    }
+
+    #presentation>.section-content h3 {
+        font-size: 20px;
+    }
+}

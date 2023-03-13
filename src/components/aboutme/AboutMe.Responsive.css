@@ -1,0 +1,49 @@
+@media (max-width: 991px) {
+    .introduction-title {
+        font-size: 44px !important;
+    }
+
+    .introduction-subtitle {
+        font-size: 23px !important;
+    }
+
+    .technologies-list {
+        margin-left: 20px;
+    }
+}
+
+@media (max-width: 767px) {
+    .introduction-content {
+        display: grid;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .grid-career-container {
+        display: grid;
+        grid-template-areas:
+            'titleExp'
+            'messageExp'
+            'tags';
+    }
+
+    .technologies-list {
+        margin-left: -5px;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 642px) {
+    .introduction-image {
+        width: 65%;
+    }
+
+    .introduction-content {
+        display: grid;
+        grid-template-areas:
+            'image none'
+            'message message';
+        align-items: center;
+        gap: 0px;
+    }
+}

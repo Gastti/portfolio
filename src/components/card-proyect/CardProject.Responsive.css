@@ -1,0 +1,9 @@
+@media (max-width: 991px) {
+    .cardproject-container {
+        height: 400px;
+    }
+
+    .cardproject-container:not(:last-child) {
+        margin-bottom: 40px;
+    }
+}

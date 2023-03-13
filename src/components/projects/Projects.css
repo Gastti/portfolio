@@ -1,0 +1,5 @@
+.grid-projects-container {
+    display: grid;
+    grid-template-columns: 48% 48%;
+    gap: 4%;
+}

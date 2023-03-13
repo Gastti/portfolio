@@ -1,0 +1,78 @@
+.btn {
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    transition: all .3s;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.btn:active {
+    top: 2px;
+}
+
+.btn>a,
+.btn>span {
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn.border a,
+.btn.border span {
+    color: #1a1b1f;
+}
+
+.btn.normal a,
+.btn.normal span {
+    font-size: 16px;
+    font-weight: 600;
+    padding: 15px 30px;
+}
+
+.btn.large a,
+.btn.large span {
+    font-size: 20px;
+    padding: 15px 35px;
+}
+
+.btn.border {
+    background-color: #dddddd;
+    outline: 2px solid #cccccc;
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+.btn.border a,
+.btn.border span {
+    color: #fff;
+}
+
+.btn.border:hover {
+    background-color: rgb(209, 209, 209);
+    outline: 2px solid #c1c1c1;
+}
+
+.btn.dark {
+    background: #1a1b1f;
+    color: #fff;
+}
+
+.btn.dark:hover {
+    background: #2f3036;
+}
+
+.btn.disabled {
+    cursor: default;
+    opacity: 0.4;
+}
+
+.btn.disabled:hover {
+    background: #1a1b1f;
+}
+
+.btn.disabled:active {
+    top: 0px;
+}

@@ -1,0 +1,12 @@
+.notfound-container h1 {
+    font-size: 80px;
+}
+
+.notfound-container p {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.notfound-container:first-child button {
+    margin-right: 10px;
+}
