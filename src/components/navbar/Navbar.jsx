@@ -21,7 +21,6 @@ function Navbar({ lang }) {
             left: 0,
             behavior: 'smooth'
         })
-        console.log('CLICKED');
     }
 
     function NavbarRender(links) {

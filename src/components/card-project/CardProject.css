@@ -1,5 +1,5 @@
 .cardproject-container {
-    height: 600px;
+    height: 520px;
     border-radius: 15px;
     position: relative;
     overflow: hidden;
@@ -8,10 +8,10 @@
 .cardproject-container>img {
     position: absolute;
     z-index: 1;
+    bottom: 15px;
 }
 
-.cardproject-container>a {
-    display: inline-block;
+.cardproject-content {
     position: relative;
     width: 100%;
     height: 100%;
@@ -22,7 +22,7 @@
 }
 
 .cardproject-container.large {
-    height: 800px;
+    height: 600px;
 }
 
 .cardproject-container.small {
@@ -31,7 +31,8 @@
 
 .cardproject-url-content {
     display: flex;
-    align-items: flex-end;
+    flex-direction: column;
+    justify-content: flex-end;
     width: 100%;
     height: 100%;
 }
@@ -39,7 +40,7 @@
 .cardproject-url-content h4 {
     font-size: 30px;
     line-height: 34px;
-    font-weight: 500 !important;
+    font-weight: 400 !important;
 }
 
 .technologies-container {
@@ -51,4 +52,31 @@
     padding: 10px;
     right: 0px;
     z-index: 4;
+}
+
+.cardproject-urls {
+    display: flex;
+    flex-flow: row wrap;
+    margin-top: 10px;
+    gap: 10px;
+}
+
+.cardproject-urls > a {
+    max-width: 200px;
+    background-color: #000;
+    padding: 5px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: all .3s;
+}
+
+.cardproject-urls > a > img {
+    width: 20px;
+    margin-right: 10px;
+    margin-bottom: -5px;
+}
+
+.cardproject-urls > a:hover {
+    outline: 1px solid #ffffff7d;
 }
