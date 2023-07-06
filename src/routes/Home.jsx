@@ -10,7 +10,6 @@ import Contact from "../components/contact/Contact";
 import Footer from "../components/footer/Footer";
 import QuickContact from "../components/quickcontact/QuickContact";
 import AboutMe from "../components/aboutme/AboutMe";
-import Me from "../assets/me.png";
 
 function Home() {
   const [language, setLanguage] = useState("");
