@@ -1,4 +1,9 @@
 @media (max-width: 991px) {
+    .navbar {
+        padding: 20px 30px;
+        background-color: #000;
+        background-color: #eeeef1;
+    }
 
     .logo-container {
         z-index: 2;
@@ -7,10 +12,13 @@
     .menu-button {
         width: 26px;
         height: 22px;
-        margin: 5px;
+        padding: 10px;
         cursor: pointer !important;
         display: block;
         z-index: 1;
+        box-sizing: content-box;
+        margin: 0px;
+        margin-right: -12px;
     }
 
     .menu-links {
