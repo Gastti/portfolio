@@ -11,7 +11,7 @@ function AboutMe({ language }) {
             experience: {
                 title: 'Mi Experiencia',
                 message: 'Comencé como artista 2D creando assets para videojuegos creados por fans y me he esforzado en aprender las habilidades necesarias para convertirme en desarrollador web. Actualmente me encuentro trabajando en proyectos personales mientras busco un puesto de trabajo para ser Full Stack Developer a tiempo completo.',
-                technologies: ['JAVASCRIPT', 'NODE.JS', 'REACT.JS', 'HTML', 'CSS', 'MONGODB', 'MYSQL', 'POSTGRESQL', 'GIT', 'JIRA', 'HEROKU', 'AWS', 'PHOTOSHOP']
+                technologies: ['TYPESCRIPT','JAVASCRIPT', 'NODE.JS', 'REACT.JS', 'HTML', 'CSS', 'MONGODB', 'MYSQL', 'POSTGRESQL', 'GIT', 'JIRA', 'AWS', 'PHOTOSHOP']
             }
         },
         eng: {
@@ -22,7 +22,7 @@ function AboutMe({ language }) {
             experience: {
                 title: 'My Experience',
                 message: "I started out as a 2d artist for fan game assets, and have worked to learn the skills to become a full stack developer. I have practical experience with node.js, crud, and am fleshing out my backend skillset. Once I have mastered this, I will work to acquire a full time developer job.",
-                technologies: ['JAVASCRIPT', 'NODE.JS', 'REACT.JS', 'HTML', 'CSS', 'MONGODB', 'MYSQL', 'POSTGRESQL', 'GIT', 'JIRA', 'HEROKU', 'AWS', 'PHOTOSHOP']
+                technologies: ['TYPESCRIPT','JAVASCRIPT', 'NODE.JS', 'REACT.JS', 'HTML', 'CSS', 'MONGODB', 'MYSQL', 'POSTGRESQL','GIT', 'JIRA',  'AWS', 'PHOTOSHOP']
             }
         }
     }]

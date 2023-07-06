@@ -9,11 +9,11 @@ function Projects({ lang }) {
     {
       title: "Tic Tac Toe",
       description: {
-        eng: "It is an online multiplayer game where you can create a room and invite your friends to play with you.",
-        esp: "Es un juego multijugador online en el que puedes crear una sala e invitar a tus amigos a jugar contigo.",
+        eng: "It is an online multiplayer game where you can create a lobby and invite your friends to play with you.",
+        esp: "Es un juego multijugador en linea en el que puedes crear una sala e invitar a tus amigos a jugar contigo.",
       },
       technologies: ["typescript", "node", "react", "socketio"],
-      color: "#1f115f",
+      color: "#160c41",
       image: TictactoeImage,
       github_text: {
         eng: "Go to repository",

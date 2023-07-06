@@ -14,7 +14,7 @@ function CardProject({
   githubText,
   githubUrl,
   deployText,
-  deployUrl
+  deployUrl,
 }) {
   function TechsRender(array) {
     return array.map((item) => {
@@ -30,14 +30,11 @@ function CardProject({
       <div className="technologies-container">{TechsRender(technologies)}</div>
       <img src={image} />
       <div
+        className="cardproject-gradient"
         style={{
           background: `linear-gradient(0deg, ${
             color || "#ccc"
           } 5%, rgba(255,255,255,0) 40%)`,
-          width: "100%",
-          height: "100%",
-          zIndex: "2",
-          position: "absolute",
         }}
       ></div>
       <div className="cardproject-content">
@@ -45,11 +42,11 @@ function CardProject({
           <h4>{title}</h4>
           <p>{description}</p>
           <div className="cardproject-urls">
-            <a href={githubUrl} target="_blank"> 
+            <a href={githubUrl} target="_blank">
               <img src={GithubIcon} />
               <span>{githubText}</span>
             </a>
-            <a href={deployUrl} target="_blank"> 
+            <a href={deployUrl} target="_blank">
               <img src={DeployIcon} />
               <span>{deployText}</span>
             </a>
