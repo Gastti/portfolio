@@ -12,7 +12,9 @@ function Navbar({ lang }) {
     const Links = [
         { name: { esp: 'Inicio', eng: 'Home' }, href: '/' },
         { name: { esp: 'Contacto', eng: 'Contact' }, href: '#contactme' },
-        { name: { esp: 'Proyectos', eng: 'View Work' }, href: '/work' }
+        { name: { esp: 'Linkedin', eng: 'Linkedin' }, href: 'https://www.linkedin.com/in/gastongutierrez96' },
+        { name: { esp: 'Github', eng: 'Github' }, href: 'https://github.com/Gastti' }, 
+        { name: { esp: 'Proyectos', eng: 'View Work' }, href: '/work' },
     ]
 
     function goTop() {
@@ -25,12 +27,13 @@ function Navbar({ lang }) {
 
     function NavbarRender(links) {
         return links.map((link) => {
+            console.log(link.href[0])
             return (
                 <li key={link.href}>
                     {
-                        link.href.includes('/')
+                        link.href[0].includes('/')
                             ? <Link to={link.href} onClick={goTop}>{language == 'es-ES' ? link.name.esp : link.name.eng}</Link>
-                            : <a href={link.href}>{language == 'es-ES' ? link.name.esp : link.name.eng}</a>
+                            : <a href={link.href} target={link.href[0] != "#" ? "_blank" : ""}>{language == 'es-ES' ? link.name.esp : link.name.eng}</a>
                     }
                 </li>
             )
