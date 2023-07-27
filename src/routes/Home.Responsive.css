@@ -11,3 +11,9 @@
         font-size: 20px;
     }
 }
+
+@media (max-width: 815px) {
+    .me-photo {
+        display: none;
+    }
+}

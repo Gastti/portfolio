@@ -10,6 +10,7 @@ import Contact from "../components/contact/Contact";
 import Footer from "../components/footer/Footer";
 import QuickContact from "../components/quickcontact/QuickContact";
 import AboutMe from "../components/aboutme/AboutMe";
+import Me from "../assets/me.png"
 
 function Home() {
   const [language, setLanguage] = useState("");
@@ -22,7 +23,7 @@ function Home() {
       esp: {
         title: "¡Hola Mundo!",
         subtitle:
-          "Mi nombre es Gastón Gutierrez, Full Stack Developer inclinado hacia el backend y apasionado en crear soluciones a través la programación.",
+          "Mi nombre es Gastón Gutierrez, Full Stack Developer apasionado en crear soluciones a través la programación.",
         button: "Ver CV",
       },
       eng: {
@@ -46,12 +47,12 @@ function Home() {
         </div>
       </div>
       <Section id="presentation">
-        {/* <div className='me-photo'>
-                    <img src={Me} />
-                </div> */}
+      <div className='me-photo'>
+          <img src={Me} />
+        </div>
         <div className="me-description">
           <h1>{activeInfo.title}</h1>
-          <h3>{activeInfo.subtitle}</h3>
+          <p>{activeInfo.subtitle}</p>
           <Button type="dark" size="large" href="#projects">
             {activeInfo.button}
           </Button>
