@@ -40,7 +40,6 @@ function Home() {
   return (
     <div>
       <Navbar lang={language} />
-      <QuickContact />
       <div className="background-container">
         <div className="dinamic-background">
           <img src={Background} />
