@@ -3,6 +3,7 @@ import "./Projects.Responsive.css";
 import CardProject from "../card-project/CardProject";
 import ProjectPlaceholder from "../../assets/projectplaceholder.png";
 import TictactoeImage from "../../assets/tictactoe.png";
+import BlogImage from "../../assets/blog.png";
 
 function Projects({ lang }) {
   const proyectos = [
@@ -15,11 +16,19 @@ function Projects({ lang }) {
       technologies: ["typescript", "node", "react", "socketio"],
       color: "#160c41",
       image: TictactoeImage,
+
       github_text: {
-        eng: "Go to repository",
-        esp: "Ir a Github",
+        eng: "Client Code",
+        esp: "Client Code",
       },
       github_url: "https://github.com/Gastti/tic-tac-toe",
+
+      githubb_text: {
+        eng: "Server Code",
+        esp: "Server Code",
+      },
+      githubb_url: "https://github.com/Gastti/tic-tac-toe-server",
+
       deploy_text: {
         eng: "Go to site",
         esp: "Ir al sitio",
@@ -27,19 +36,27 @@ function Projects({ lang }) {
       deploy_url: "https://tic-tac-toe-gastti.vercel.app/#/",
     },
     {
-      title: "Segundo Projecto",
+      title: "Blog.",
       description: {
-        eng: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.",
-        esp: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.",
+        eng: "Personalized platform for the expression and exchange of ideas.",
+        esp: "Plataforma personalizada para la expresión y el intercambio de ideas.",
       },
-      technologies: ["javascript", "node", "react", "mysql"],
+      technologies: ["typescript", "node", "react", "mongodb"],
       color: "#2a2c31",
-      image: ProjectPlaceholder,
+      image: BlogImage,
+
       github_text: {
-        eng: "Go to repository",
-        esp: "Ir a Github",
+        eng: "Client Code",
+        esp: "Client Code",
       },
-      github_url: "https://github.com/Gastti",
+      github_url: "https://github.com/Gastti/blog-client",
+
+      githubb_text: {
+        eng: "Server Code",
+        esp: "Server Code",
+      },
+      githubb_url: "https://github.com/Gastti/blog-server",
+
       deploy_text: {
         eng: "Go to site",
         esp: "Ir al sitio",
@@ -59,6 +76,8 @@ function Projects({ lang }) {
         description,
         github_text,
         github_url,
+        githubb_text,
+        githubb_url,
         deploy_text,
         deploy_url,
       } = x;
@@ -74,6 +93,8 @@ function Projects({ lang }) {
           type={type || ""}
           githubText={lang === "es-ES" ? github_text.esp : github_text.eng}
           githubUrl={github_url}
+          githubbText={lang === "es-ES" ? githubb_text.esp : githubb_text.eng}
+          githubbUrl={githubb_url}
           deployText={lang === "es-ES" ? deploy_text.esp : deploy_text.eng}
           deployUrl={deploy_url}
         />

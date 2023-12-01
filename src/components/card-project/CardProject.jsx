@@ -13,6 +13,8 @@ function CardProject({
   description,
   githubText,
   githubUrl,
+  githubbText,
+  githubbUrl,
   deployText,
   deployUrl,
 }) {
@@ -45,6 +47,10 @@ function CardProject({
             <a href={githubUrl} target="_blank">
               <img src={GithubIcon} />
               <span>{githubText}</span>
+            </a>
+            <a href={githubbUrl} target="_blank">
+              <img src={GithubIcon} />
+              <span>{githubbText}</span>
             </a>
             <a href={deployUrl} target="_blank">
               <img src={DeployIcon} />
