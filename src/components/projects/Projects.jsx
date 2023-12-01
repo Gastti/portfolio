@@ -61,7 +61,7 @@ function Projects({ lang }) {
         eng: "Go to site",
         esp: "Ir al sitio",
       },
-      deploy_url: "#",
+      deploy_url: "https://blog-client-two-steel.vercel.app/",
     },
   ];
 
