@@ -10,7 +10,7 @@ function AboutMe({ language }) {
             },
             experience: {
                 title: 'Mi Experiencia',
-                message: 'Comencé como artista 3D creando assets para videojuegos creados por fans y me he esforzado en aprender las habilidades necesarias para convertirme en desarrollador web. Actualmente me encuentro trabajando en proyectos personales mientras busco un puesto de trabajo para ser Full Stack Developer a tiempo completo.',
+                message: 'Full Stack Developer con dos años de experiencia trabajando de manera independiente. Mi enfoque se centra en la creación de sitios web únicos y funcionales que no solo cumplen con las expectativas, sino que también reflejan la visión y personalidad de mis clientes.',
                 technologies: ['TYPESCRIPT','JAVASCRIPT', 'NODE.JS', 'REACT.JS', 'HTML', 'CSS', 'MONGODB', 'MYSQL', 'POSTGRESQL', 'GIT', 'JIRA', 'AWS', 'PHOTOSHOP']
             }
         },
@@ -21,7 +21,7 @@ function AboutMe({ language }) {
             },
             experience: {
                 title: 'My Experience',
-                message: "I started out as a 3D artist for fan game assets, and have worked to learn the skills to become a full stack developer. I have practical experience with node.js, crud, and am fleshing out my backend skillset. Once I have mastered this, I will work to acquire a full time developer job.",
+                message: "Full Stack Developer with two years of experience working independently. My focus is on creating unique and functional websites that not only meet expectations, but also reflect the vision and personality of my clients.",
                 technologies: ['TYPESCRIPT','JAVASCRIPT', 'NODE.JS', 'REACT.JS', 'HTML', 'CSS', 'MONGODB', 'MYSQL', 'POSTGRESQL','GIT', 'JIRA',  'AWS', 'PHOTOSHOP']
             }
         }
