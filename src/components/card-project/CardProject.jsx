@@ -17,6 +17,7 @@ function CardProject({
   githubbUrl,
   deployText,
   deployUrl,
+  github_disabled
 }) {
   function TechsRender(array) {
     return array.map((item) => {
@@ -34,9 +35,8 @@ function CardProject({
       <div
         className="cardproject-gradient"
         style={{
-          background: `linear-gradient(0deg, ${
-            color || "#ccc"
-          } 5%, rgba(255,255,255,0) 40%)`,
+          background: `linear-gradient(0deg, ${color || "#ccc"
+            } 5%, rgba(255,255,255,0) 40%)`,
         }}
       ></div>
       <div className="cardproject-content">
@@ -44,14 +44,16 @@ function CardProject({
           <h4>{title}</h4>
           <p>{description}</p>
           <div className="cardproject-urls">
-            <a href={githubUrl} target="_blank">
-              <img src={GithubIcon} />
-              <span>{githubText}</span>
-            </a>
-            <a href={githubbUrl} target="_blank">
-              <img src={GithubIcon} />
-              <span>{githubbText}</span>
-            </a>
+            {!github_disabled && (<>
+              <a href={githubUrl} target="_blank">
+                <img src={GithubIcon} />
+                <span>{githubText}</span>
+              </a>
+              <a href={githubbUrl} target="_blank">
+                <img src={GithubIcon} />
+                <span>{githubbText}</span>
+              </a>
+            </>)}
             <a href={deployUrl} target="_blank">
               <img src={DeployIcon} />
               <span>{deployText}</span>

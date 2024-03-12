@@ -4,6 +4,7 @@ import CardProject from "../card-project/CardProject";
 import ProjectPlaceholder from "../../assets/projectplaceholder.png";
 import TictactoeImage from "../../assets/tictactoe.png";
 import BlogImage from "../../assets/blog.png";
+import ScoutingImage from "../../assets/scouting.png";
 
 function Projects({ lang }) {
   const proyectos = [
@@ -16,6 +17,8 @@ function Projects({ lang }) {
       technologies: ["typescript", "node", "react", "socketio"],
       color: "#160c41",
       image: TictactoeImage,
+
+      github_disabled: false,
 
       github_text: {
         eng: "Client Code",
@@ -45,6 +48,8 @@ function Projects({ lang }) {
       color: "#2a2c31",
       image: BlogImage,
 
+      github_disabled: false,
+
       github_text: {
         eng: "Client Code",
         esp: "Client Code",
@@ -63,6 +68,36 @@ function Projects({ lang }) {
       },
       deploy_url: "https://blog-client-two-steel.vercel.app/",
     },
+    {
+      title: "Scouting",
+      description: {
+        eng: "It is a landing page that I developed for a sports consultancy seeking to cover each of their needs.",
+        esp: "Es una landing page que desarrollé para una consultora deportiva buscando cubrir cada una de sus necesidades.",
+      },
+      technologies: ["typescript", "nextjs", "tailwind"],
+      color: "#2a2c31",
+      image: ScoutingImage,
+
+      github_disabled: true,
+
+      github_text: {
+        eng: "Client Code",
+        esp: "Client Code",
+      },
+      github_url: "https://github.com/Gastti/tic-tac-toe",
+
+      githubb_text: {
+        eng: "Server Code",
+        esp: "Server Code",
+      },
+      githubb_url: "https://github.com/Gastti/tic-tac-toe-server",
+
+      deploy_text: {
+        eng: "Go to site",
+        esp: "Ir al sitio",
+      },
+      deploy_url: "https://scouting.com.ar",
+    },
   ];
 
   const renderGeneral = (array) => {
@@ -80,6 +115,7 @@ function Projects({ lang }) {
         githubb_url,
         deploy_text,
         deploy_url,
+        github_disabled
       } = x;
       return (
         <CardProject
@@ -97,6 +133,7 @@ function Projects({ lang }) {
           githubbUrl={githubb_url}
           deployText={lang === "es-ES" ? deploy_text.esp : deploy_text.eng}
           deployUrl={deploy_url}
+          github_disabled={github_disabled}
         />
       );
     });

@@ -6,7 +6,9 @@ import postgresql from "../../assets/techs/postgresql.png";
 import react from "../../assets/techs/react.png";
 import socketio from "../../assets/techs/socketio.png";
 import typescript from "../../assets/techs/typescript.png";
-import javascript from "../../assets/techs/javascript.png"
+import javascript from "../../assets/techs/javascript.png";
+import tailwind from "../../assets/techs/tailwind.png";
+import nextjs from "../../assets/techs/nextjs.png";
 
 function CardTech({ name }) {
   const techList = [
@@ -42,6 +44,14 @@ function CardTech({ name }) {
       javascript: {
         title: "Javascript",
         img: javascript
+      },
+      tailwind: {
+        title: "Tailwind",
+        img: tailwind
+      },
+      nextjs: {
+        title: "Next.js",
+        img: nextjs
       }
     },
   ];

@@ -61,3 +61,18 @@
   padding-left: 7px;
   padding-right: 6px;
 }
+
+
+.cardtech-layout.nextjs {
+  background-color: #000;
+  padding-left: 5px;
+  padding-right: 7px;
+  overflow: hidden;
+}
+
+.cardtech-layout.tailwind {
+  background-color: #38bdf8;
+  padding-left: 9px;
+  padding-right: 7px;
+  overflow: hidden;
+}
