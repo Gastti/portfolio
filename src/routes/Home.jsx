@@ -52,7 +52,7 @@ function Home() {
         <div className="me-description">
           <h1>{activeInfo.title}</h1>
           <p>{activeInfo.subtitle}</p>
-          <Button type="dark" size="large" href="#projects">
+          <Button type="dark" size="large" target="_blank" href="https://drive.google.com/file/d/1JyNp4MLf96bL_IZX_VkC_xSh5PtcVa5O/view?usp=sharing">
             {activeInfo.button}
           </Button>
         </div>
